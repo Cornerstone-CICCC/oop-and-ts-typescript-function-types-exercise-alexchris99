@@ -6,7 +6,8 @@ function createUser(name: string, age: number): { name: string, age: number } {
   return { name, age };
 }
 
-const myCreateUser = function(name, age) {
+const myCreateUser: typeof createUser = function(name, age):{name:string, age: number} {
+  return {name,age}
   
 }
 
